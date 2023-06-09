@@ -1,4 +1,10 @@
-import { MailIcon, GitHubIcon, TwitterIcon, LinkedInIcon } from "../assets";
+import {
+  MailIcon,
+  GitHubIcon,
+  TwitterIcon,
+  LinkedInIcon,
+  MediumIcon,
+} from "../assets";
 
 export const Footer = () => {
   return (
@@ -42,6 +48,14 @@ export const Footer = () => {
           className="w-4 h-4 md:hover:text-blue-800 transition-all duration-200"
         >
           <LinkedInIcon />
+        </a>
+        <a
+          href="https://medium.com/@shriharim006"
+          target="_blank"
+          title="linkedin"
+          className="w-4 h-4 md:hover:text-green-800 transition-all duration-200"
+        >
+          <MediumIcon />
         </a>
       </div>
     </footer>
