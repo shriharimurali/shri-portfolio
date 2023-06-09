@@ -10,7 +10,9 @@ export const List = ({ list, heading }: ListProps) => {
         <li
           key={`${item}-${idx}`}
           className={`${
-            heading && idx === 0 ? "font-semibold text-slate-700 uppercase" : ""
+            heading && idx === 0
+              ? "font-semibold text-slate-700 dark:text-white uppercase"
+              : ""
           }`}
         >
           {item}

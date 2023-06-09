@@ -6,7 +6,7 @@ export const Hero = () => {
 
         <p className="text-2xl md:text-4xl font-light leading-relaxed max-w-2xl">
           I'm{" "}
-          <strong className="font-semibold text-slate-700">
+          <strong className="font-semibold text-slate-700 dark:text-white">
             Shrihari Murali,
           </strong>{" "}
           a design-minded front-end software engineer focused on building
@@ -18,7 +18,7 @@ export const Hero = () => {
           <span className="relative group">
             <a
               href="mailto:shriharim006@gmail.com"
-              className="text-base text-slate-700"
+              className="text-base text-slate-700 dark:text-gray-400"
             >
               shriharim006@gmail.com
             </a>

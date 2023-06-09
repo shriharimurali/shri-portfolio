@@ -22,7 +22,7 @@ export const Experience = () => {
           <p className="relative group text-center md:text-left">
             <a
               href="/src/assets/cv.pdf"
-              className="text-2xl font-semibold text-slate-700 cursor-pointer"
+              className="text-2xl font-semibold text-slate-700 dark:text-white cursor-pointer"
               target="_blank"
               rel="noopener noreferrer"
             >
