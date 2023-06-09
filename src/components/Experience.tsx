@@ -1,11 +1,7 @@
 import { Section } from "./Section";
 import { EXPERIENCE } from "../constants";
-import PDF from "../assets/cv.pdf";
 
 export const Experience = () => {
-  const onResumeClick = () => {
-    window.open(PDF);
-  };
   return (
     <Section heading="Experience">
       <ul className="w-full space-y-10 font-light max-w-2xl">
@@ -15,7 +11,7 @@ export const Experience = () => {
             key={`${title}-${idx}`}
           >
             <div>
-              <h4 className="font-semibold">{company}</h4>
+              <h3 className="font-semibold">{company}</h3>
               <p>{title}</p>
             </div>
             <span>{timeline}</span>
@@ -25,7 +21,7 @@ export const Experience = () => {
         <li className="!mt-14 md:!mt-20">
           <p className="relative group text-center md:text-left">
             <a
-              onClick={onResumeClick}
+              href="/src/assets/cv.pdf"
               className="text-2xl font-semibold text-slate-700 cursor-pointer"
               target="_blank"
               rel="noopener noreferrer"
