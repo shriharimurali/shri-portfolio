@@ -1,8 +1,15 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import ReactGA from "react-ga";
+
 import { Hero, Background, Skills, Experience, Footer } from "./components";
 
 function App() {
   const [darkToggle, setDarkToggle] = useState(false);
+
+  useEffect(() => {
+    ReactGA.initialize("G-EHSCYHEWXL");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <div className={` min-h-screen w-full ${darkToggle && "dark"}`}>
