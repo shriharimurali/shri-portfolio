@@ -1,4 +1,4 @@
-import { Hero, Background, Skills, Experience, Footer } from "../../components";
+import { Hero, Background, Skills, Experience } from "../../components";
 import { Layout } from "../../layout";
 
 export const Home = () => {

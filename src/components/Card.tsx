@@ -5,7 +5,7 @@ interface CardProps {
   link: string;
 }
 
-export const Card = ({ title, thumbnail, guid, link }: CardProps) => {
+export const Card = ({ title, thumbnail, link }: CardProps) => {
   return (
     <div className="px-4 break-inside-avoid-column">
       <div className="mb-5 overflow-hidden bg-white border border-gray-200 rounded-lg shadow-md">

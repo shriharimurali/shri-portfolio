@@ -7,7 +7,7 @@ import { Layout } from "../../layout";
 import { Card, CardSkeleton } from "../../components";
 
 export const Blog = () => {
-  const { profile, posts, loading } = useBlogPosts();
+  const { posts, loading } = useBlogPosts();
 
   useEffect(() => {
     document.title = "Shrihari | Blog";
