@@ -3,3 +3,4 @@ export * from "./Background";
 export * from "./Skills";
 export * from "./Experience";
 export * from "./Footer";
+export * from "./Card";
