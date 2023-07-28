@@ -86,3 +86,39 @@ export const EXPERIENCE = [
     timeline: "Mar 2012 - Jun 2012",
   },
 ];
+
+export const languages: Record<string, string> = {
+  html: "./icons/html-icon.svg",
+  css: "./icons/css-icon.svg",
+  sass: "./icons/sass-icon.svg",
+  js: "./icons/js-icon.svg",
+  typescript: "./icons/typescript-icon.svg",
+};
+
+export const libraries: Record<string, string> = {
+  react: "./icons/react-icon.svg",
+  redux: "./icons/redux-icon.svg",
+  tailwind: "./icons/tailwindcss-icon.svg",
+  bootstrap: "./icons/bootstrap-icon.svg",
+  mui: "./icons/mui-icon.svg",
+  nextjs: "./icons/nextjs-icon.svg",
+  storybook: "./icons/storybook-icon.svg",
+  jest: "./icons/jest-icon.svg",
+  highCharts: "./icons/highcharts-icon.svg",
+  nodejs: "./icons/nodejs-icon.svg",
+};
+
+export const tools: Record<string, string> = {
+  github: "./icons/github-icon.svg",
+  gitlab: "./icons/gitlab-icon.svg",
+  vite: "./icons/vite-icon.svg",
+  webpack: "./icons/webpack-icon.svg",
+  docker: "./icons/docker-icon.svg",
+  postman: "./icons/postman-icon.svg",
+  vscode: "./icons/vscode-icon.svg",
+};
+
+export const design: Record<string, string> = {
+  figma: "./icons/figma-icon.svg",
+  sketch: "./icons/sketch-icon.svg",
+};

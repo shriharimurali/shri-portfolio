@@ -5,8 +5,8 @@ export const About = () => {
   useTitle("About | Shrihari");
 
   return (
-    <section className="flex flex-col items-start justify-start w-full max-w-screen-xl gap-10 p-4 overflow-scroll md:px-0 no-scrollbar">
-      <div className="flex flex-col justify-center w-full md:w-[50%] max-w-2xl space-y-4 text-base font-light">
+    <section className="flex flex-col items-start justify-start w-full max-w-screen-xl gap-10 p-4 overflow-scroll divide-y no-scrollbar">
+      <div className="flex flex-col justify-center w-full space-y-4 text-base font-light">
         <h2 className="text-3xl font-bold text-slate-700 dark:text-white">
           About Me
         </h2>
@@ -58,8 +58,8 @@ export const About = () => {
           project.
         </p>
       </div>
-      <div className="w-full flex-col md:w-[50%] items-start flex  gap-5">
-        <h2 className="text-3xl font-bold text-slate-700 dark:text-white">
+      <div className="flex flex-col items-start w-full gap-5">
+        <h2 className="mt-6 text-3xl font-bold text-slate-700 dark:text-white">
           Experience
         </h2>
         <ul className="w-full space-y-8 font-light">

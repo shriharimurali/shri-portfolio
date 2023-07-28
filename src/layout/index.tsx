@@ -14,7 +14,7 @@ export const Layout = ({ children }: { children: ReactNode }) => {
       <div className="flex flex-col items-center w-full h-[calc(100vh-96px)] md:h-[calc(100vh-120px)] bg-white dark:bg-slate-800 dark:text-white">
         {children}
       </div>
-      <Footer darkToggle />
+      <Footer />
     </div>
   );
 };

@@ -14,6 +14,7 @@ function App() {
   const Home = lazy(() => import("./pages/home"));
   const About = lazy(() => import("./pages/about"));
   const Blog = lazy(() => import("./pages/blog"));
+  const TechStack = lazy(() => import("./pages/tech-stack"));
 
   return (
     <Layout>
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/tech-stack" element={<TechStack />} />
         </Routes>
       </Suspense>
     </Layout>

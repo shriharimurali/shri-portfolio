@@ -9,8 +9,8 @@ interface NavProps {
 }
 
 export const Nav = ({ darkToggle, setDarkToggle }: NavProps) => (
-  <div className="hidden w-full dark:bg-slate-800 md:flex">
-    <nav className="flex items-center justify-end w-full h-20 max-w-screen-xl px-4 m-auto">
+  <div className="hidden w-full h-20 dark:bg-slate-800 md:flex">
+    <nav className="flex items-center justify-end w-full max-w-screen-xl px-4 m-auto">
       <div className="flex gap-12 font-light">
         {Menu.map(({ title, url }) => (
           <Link to={url} key={title} className="dark:text-white">
