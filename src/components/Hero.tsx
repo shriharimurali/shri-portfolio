@@ -2,7 +2,7 @@ export const Hero = () => {
   return (
     <header className="flex flex-col md:flex-row gap-10 md:gap-10 md:justify-between h-screen py-[70px] px-[50px] md:py-[120px] md:px-[100px] w-full max-w-screen-2xl">
       <div className="flex flex-col justify-between gap-5 md:gap-0">
-        <h2 className="text-2xl font-light md:text-4xl">Hello 👋</h2>
+        <h1 className="text-2xl font-light md:text-4xl">Hello 👋</h1>
 
         <p className="max-w-2xl text-2xl font-light leading-relaxed md:text-4xl">
           I'm{" "}
@@ -30,7 +30,7 @@ export const Hero = () => {
       <div className="flex items-center justify-center h-full md:justify-end">
         <div className="w-[200px] md:w-[300px] md:h-[300px] rounded-full overflow-hidden border-8 border-slate-100 shadow-2xl">
           <img
-            src="/Profile.png"
+            src="/Profile.webp"
             alt="profile-pic"
             className="w-full h-full"
             loading="lazy"
