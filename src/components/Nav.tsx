@@ -106,7 +106,7 @@ export const MobileNav = ({ darkToggle, setDarkToggle }: NavProps) => {
           Close
         </button>
       </div>
-      <div className="flex items-center w-full px-4 h-14">
+      <div className="flex items-center w-full px-4 h-14 md:hidden dark:bg-slate-800">
         <button onClick={() => setShowMenu(!showMenu)}>Menu</button>
       </div>
     </>
