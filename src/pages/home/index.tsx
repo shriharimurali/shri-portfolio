@@ -1,14 +1,7 @@
-import { Hero, Background, Skills, Experience } from "../../components";
+import { Hero } from "../../components";
 
 export const Home = () => {
-  return (
-    <>
-      <Hero />
-      <Background />
-      <Skills />
-      <Experience />
-    </>
-  );
+  return <Hero />;
 };
 
 export default Home;

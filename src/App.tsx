@@ -12,6 +12,7 @@ function App() {
   }, []);
 
   const Home = lazy(() => import("./pages/home"));
+  const About = lazy(() => import("./pages/about"));
   const Blog = lazy(() => import("./pages/blog"));
 
   return (
@@ -19,7 +20,9 @@ function App() {
       <Suspense fallback={<Spinner />}>
         <Routes>
           {/* <Route path="*" element={<NotFound />} /> */}
+
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
         </Routes>
       </Suspense>

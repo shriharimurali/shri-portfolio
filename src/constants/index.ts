@@ -19,6 +19,29 @@ export const FRAMEWORKS = [
   "Cypress",
 ];
 
+export const Menu = [
+  {
+    title: "Home",
+    url: "/",
+  },
+  {
+    title: "About",
+    url: "/about",
+  },
+  {
+    title: "Tech Stack",
+    url: "/tech-stack",
+  },
+  {
+    title: "Blog",
+    url: "/blog",
+  },
+  {
+    title: "Contact",
+    url: "/contact",
+  },
+];
+
 export const TOOLS = [
   "Tools",
   "Bash",
