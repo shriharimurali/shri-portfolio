@@ -1,24 +1,3 @@
-export const LANGUAGES = [
-  "Languages",
-  "JavaScript",
-  "TypeScript",
-  "HTML",
-  "CSS/Sass",
-];
-
-export const FRAMEWORKS = [
-  "Frameworks/Libraries",
-  "React/Redux",
-  "TailwindCSS",
-  "React Native",
-  "HighCharts",
-  "Chart.js",
-  "MUI",
-  "BootStrap",
-  "React Testing Library",
-  "Cypress",
-];
-
 export const Menu = [
   {
     title: "Home",
@@ -40,16 +19,6 @@ export const Menu = [
     title: "Contact",
     url: "/contact",
   },
-];
-
-export const TOOLS = [
-  "Tools",
-  "Bash",
-  "Webpack",
-  "Vite",
-  "Git & Github & Gitlab",
-  "Chrome Dev Tools",
-  "Postman",
 ];
 
 export const DESIGN = ["Design", "Sketch", "Figma", "InVision", "User Testing"];
