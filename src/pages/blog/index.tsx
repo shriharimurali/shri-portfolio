@@ -10,7 +10,7 @@ export const Blog = () => {
   useTitle("Blog | Shrihari");
 
   return (
-    <div className="w-full h-auto mb-10 max-w-screen-2xl">
+    <div className="w-full h-full pb-20 overflow-scroll max-w-screen-2xl no-scrollbar">
       {loading ? (
         <div className="gap-2 columns-1 md:columns-4">
           {times(10).map((_, index: number) => (

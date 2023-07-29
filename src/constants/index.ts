@@ -122,3 +122,22 @@ export const design: Record<string, string> = {
   figma: "./icons/figma-icon.svg",
   sketch: "./icons/sketch-icon.svg",
 };
+
+export const socialIcons = [
+  {
+    url: "https://twitter.com/ShrihariMurali",
+    icon: "./icons/twitter-icon.svg",
+  },
+  {
+    url: "https://github.com/shriharimurali",
+    icon: "./icons/github-icon.svg",
+  },
+  {
+    url: "https://www.linkedin.com/in/shriharim006/",
+    icon: "./icons/linkedin-icon.svg",
+  },
+  {
+    url: "https://codepen.io/shriharimurali/pens/public",
+    icon: "./icons/codepen-icon.svg",
+  },
+];

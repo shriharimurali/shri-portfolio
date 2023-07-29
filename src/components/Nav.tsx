@@ -2,6 +2,8 @@ import { Dispatch, SetStateAction, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { Menu } from "../constants";
+import { MenuIcon } from "./MenuIcon";
+import { BackIcon } from "./BackIcon";
 
 interface NavProps {
   darkToggle: boolean;
@@ -13,14 +15,14 @@ export const Nav = ({ darkToggle, setDarkToggle }: NavProps) => (
     <nav className="flex items-center justify-end w-full max-w-screen-xl px-4 m-auto">
       <div className="flex gap-12 font-light">
         {Menu.map(({ title, url }) => (
-          <Link to={url} key={title} className="dark:text-white">
+          <Link to={url} key={title} className="dark:text-slate-300">
             {title}
           </Link>
         ))}
       </div>
 
       <div className="flex items-center justify-end w-auto gap-4 ml-10">
-        <span className="ml-2 text-sm font-medium text-gray-900 dark:text-white">
+        <span className="ml-2 text-sm font-medium text-gray-900 dark:text-slate-300">
           Light
         </span>
         <label
@@ -42,7 +44,7 @@ export const Nav = ({ darkToggle, setDarkToggle }: NavProps) => (
             className="w-11 h-6 border bg-white-200 rounded-full peer peer-focus:ring-green-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-slate-800"
           ></div>
         </label>
-        <span className="text-sm font-medium text-gray-900 dark:text-white">
+        <span className="text-sm font-medium text-gray-900 dark:text-slate-300">
           Dark
         </span>
       </div>
@@ -65,16 +67,16 @@ export const MobileNav = ({ darkToggle, setDarkToggle }: NavProps) => {
             <Link
               to={url}
               key={title}
-              className="dark:text-white"
+              className="dark:text-slate-300"
               onClick={() => setShowMenu(false)}
             >
               {title}
             </Link>
           ))}
-          <p className="text-base">Made with ❤️</p>
+          <p className="text-base dark:text-slate-300">Made with ❤️</p>
 
           <div className="flex items-center justify-end w-auto gap-4">
-            <span className="ml-2 text-sm font-medium text-gray-900 dark:text-white">
+            <span className="ml-2 text-sm font-medium text-gray-900 dark:text-slate-300">
               Light
             </span>
             <label
@@ -96,18 +98,23 @@ export const MobileNav = ({ darkToggle, setDarkToggle }: NavProps) => {
                 className="w-11 h-6 border bg-white-200 rounded-full peer peer-focus:ring-green-300  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-slate-800"
               ></div>
             </label>
-            <span className="text-sm font-medium text-gray-900 dark:text-white">
+            <span className="text-sm font-medium text-gray-900 dark:text-slate-300">
               Dark
             </span>
           </div>
         </div>
 
-        <button className="absolute" onClick={() => setShowMenu(!showMenu)}>
-          Close
+        <button
+          className="absolute w-6 h-6 top-10 left-10"
+          onClick={() => setShowMenu(!showMenu)}
+        >
+          <BackIcon className="w-full h-full text-slate-700 dark:text-slate-300" />
         </button>
       </div>
       <div className="flex items-center w-full px-4 h-14 md:hidden dark:bg-slate-800">
-        <button onClick={() => setShowMenu(!showMenu)}>Menu</button>
+        <button className="w-6 h-6" onClick={() => setShowMenu(!showMenu)}>
+          <MenuIcon className="w-full h-full text-slate-700 dark:text-slate-300" />
+        </button>
       </div>
     </>
   );
