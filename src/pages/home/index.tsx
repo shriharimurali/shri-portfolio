@@ -1,7 +1,7 @@
 import { useTitle } from "react-use";
 
 export const Home = () => {
-  useTitle("Home | Shrihari");
+  useTitle("Home | Shrihari | Frontend Developer");
 
   return (
     <header className="flex flex-col items-center justify-center w-full h-full max-w-screen-xl gap-10 p-5 md:px-4 md:flex-row md:justify-between">

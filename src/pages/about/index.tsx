@@ -1,8 +1,13 @@
 import { useTitle } from "react-use";
 import { EXPERIENCE } from "../../constants";
+import PDF from "../../assets/cv.pdf";
 
 export const About = () => {
   useTitle("About | Shrihari");
+
+  const onResumeClick = () => {
+    window.open(PDF);
+  };
 
   return (
     <section className="flex flex-col items-start justify-start w-full max-w-screen-xl gap-10 p-4 overflow-scroll divide-y no-scrollbar">
@@ -62,20 +67,40 @@ export const About = () => {
         <h2 className="mt-6 text-3xl font-bold text-slate-700 dark:text-white">
           Experience
         </h2>
-        <ul className="w-full space-y-8 font-light">
-          {EXPERIENCE.map(({ title, company, timeline }, idx) => (
-            <li
-              className="items-center justify-between block md:flex"
-              key={`${title}-${idx}`}
+        <div className="flex flex-col items-center w-full gap-10 md:flex-row">
+          <ul className="w-full md:w-[60%] space-y-8 font-light">
+            {EXPERIENCE.map(({ title, company, timeline }, idx) => (
+              <li
+                className="items-center justify-between block md:flex"
+                key={`${title}-${idx}`}
+              >
+                <div>
+                  <h3 className="font-semibold">{company}</h3>
+                  <p>{title}</p>
+                </div>
+                <span>{timeline}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div className="flex items-center justify-center  w-full md:w-[40%]">
+            <a
+              onClick={onResumeClick}
+              className="cursor-pointer w-[120px] flex flex-col items-center text-base font-medium text-slate-600 dark:text-slate-300 group"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <div>
-                <h3 className="font-semibold">{company}</h3>
-                <p>{title}</p>
-              </div>
-              <span>{timeline}</span>
-            </li>
-          ))}
-        </ul>
+              <img
+                src="./icons/pdf-icon.svg"
+                width="40"
+                height="40"
+                alt="cv"
+                className="w-[100px] h-[100px] translate-y-0 md:group-hover:-translate-y-6 transition-all duration-200"
+              />
+              view my cv
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
